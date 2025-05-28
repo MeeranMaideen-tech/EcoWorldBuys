@@ -1,12 +1,38 @@
-# React + Vite
+# 🌿 EcoWorldBuys
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EcoWorldBuys is a modern React-based e-commerce platform that promotes eco-friendly products. Users can browse, filter, and add products, with a focus on clean design and usability.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://eco-world-buys-irt6.vercel.app/ 
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- 🛍️ **Product Grid** – Browse eco-products in a responsive layout
+- 🔍 **Filters** – Filter by category and price using a sidebar
+- ➕ **Add Product** – Add new products via a simple form
+- 💾 **LocalStorage Sync** – New products persist between page reloads
+- 🎨 **Responsive UI** – Mobile-friendly with a clean, modern look
+- 🧠 **State Management** – Uses React hooks (`useState`, `useEffect`)
+- 📦 **Built with Vite** – Fast builds and hot module replacement
+
+---
+
+## 🖼️ Screenshots
+
+![image](https://github.com/user-attachments/assets/56705b88-1fc5-4843-9e4b-b4eb43e2cba1)
+![image](https://github.com/user-attachments/assets/341f4767-beaf-4dcd-9385-1ca74916a139)
+
+
+
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Vite, JSX, Custom CSS
+- **Routing**: React Router DOM
+- **Deployment**: Vercel
+
+
