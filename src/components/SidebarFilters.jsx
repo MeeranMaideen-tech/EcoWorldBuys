@@ -1,4 +1,4 @@
-import './SidebarFilters.css';
+import '../styles/SidebarFilters.css';
 
 const SidebarFilters = ({ category, setCategory, priceRange, setPriceRange }) => {
   return (
