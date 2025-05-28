@@ -1,67 +1,26 @@
-// export default function SidebarFilters({ categoryFilter, setCategoryFilter, priceFilter, setPriceFilter }) {
-//   return (
-//     <div className="mb-6 space-y-4">
-//       <div>
-//         <label className="block font-semibold mb-1">Category</label>
-//         <select
-//           value={categoryFilter}
-//           onChange={(e) => setCategoryFilter(e.target.value)}
-//           className="w-full border border-neutral-300 rounded p-2"
-//         >
-//           <option value="All">All</option>
-//           <option value="Personal Care">Personal Care</option>
-//           <option value="Accessories">Accessories</option>
-//           <option value="Kitchen">Kitchen</option>
-//         </select>
-//       </div>
+import './SidebarFilters.css';
 
-//       <div>
-//         <label className="block font-semibold mb-1">Max Price</label>
-//         <input
-//           type="range"
-//           min={0}
-//           max={100}
-//           value={priceFilter}
-//           onChange={(e) => setPriceFilter(Number(e.target.value))}
-//           className="w-full"
-//         />
-//         <p className="text-sm text-neutral-600">Up to ${priceFilter}</p>
-//       </div>
-//     </div>
-//   );
-// }
-import '../styles/SidebarFilters.css';
-
-export default function SidebarFilters({ categoryFilter, setCategoryFilter, priceFilter, setPriceFilter }) {
+const SidebarFilters = ({ category, setCategory, priceRange, setPriceRange }) => {
   return (
-    <div className="sidebar-filters">
-      <div className="filter-group">
-        <label htmlFor="category">Category</label>
-        <select
-          id="category"
-          value={categoryFilter}
-          onChange={(e) => setCategoryFilter(e.target.value)}
-        >
-          <option value="All">All</option>
-          <option value="Personal Care">Personal Care</option>
-          <option value="Accessories">Accessories</option>
-          <option value="Kitchen">Kitchen</option>
-        </select>
-      </div>
+    <div className="sidebar">
+      <h3>Category</h3>
+      <select value={category} onChange={(e) => setCategory(e.target.value)}>
+        <option value="All">All</option>
+        <option value="Personal Care">Personal Care</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Kitchen">Kitchen</option>
+      </select>
 
-      <div className="filter-group">
-        <label htmlFor="price">Max Price</label>
-        <input
-          id="price"
-          type="range"
-          min={0}
-          max={100}
-          value={priceFilter}
-          onChange={(e) => setPriceFilter(Number(e.target.value))}
-        />
-        <p style={{ fontSize: '14px', color: '#666' }}>Up to ${priceFilter}</p>
-      </div>
+      <h3>Price Range</h3>
+      <select value={priceRange} onChange={(e) => setPriceRange(e.target.value)}>
+        <option value="All">All</option>
+        <option value="0-10">Up to $10</option>
+        <option value="10-20">$10 - $20</option>
+        <option value="20-30">$20 - $30</option>
+        <option value="30-100">$30 - $100</option>
+      </select>
     </div>
   );
-}
+};
 
+export default SidebarFilters;
